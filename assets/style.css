@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: cursive;
+}
+img {
+    display : flex;
+    width : 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+nav {
+    display:flex;
+    justify-content: space-around;
+}
+nav a.selected {
+    text-decoration: none;
+    color: red;
+}
+ins{
+    text-decoration : none;
+}
+h1 {
+    display:flex;
+    justify-content : center;
+}
+a {
+    font-size : 30px;
+}
+p{
+    display:flex;
+    flex-direction : column;
+    width : 50%;
+}

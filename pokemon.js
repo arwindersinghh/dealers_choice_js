@@ -13,6 +13,18 @@ const data = [
     }
 ];
 
+const summary = [
+    { 
+        content : "Many Pokemon exist in the vast world of Pokemon. Many young Pokemon trainers do not get to experience seeing all of the Pokemon in the Pokemon World. Charmander, Squirtle, and Bulbasaur are amongst the three starters in the Kantou region, and amongst the three, Charmander is the most popular. Fire types are just the coolest pokemon, and the only time a pokemon is cooler than Charmander is when they are wearing sunglasses. Alright, that's enough text for you folks, if you are done reading this, go to sleep. If I have any spelling or grammar errors in this summary, it's because I am writing it late at night.",
+        title : "Pokemon",
+        image : "https://images.nintendolife.com/8a8767bcfcc05/you-gotta-start-somewhere.original.jpg"
+
+    }
+];
+
+const homepage = () => {
+    return [...summary]
+};
 
 const list = () => {
     return [...data]
@@ -24,4 +36,4 @@ const find = (id) => {
     return {...pokemon};
 }
 
-module.exports = { list: list, find: find };
+module.exports = { list: list, find: find, homepage: homepage };

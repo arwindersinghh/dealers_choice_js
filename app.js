@@ -10,6 +10,8 @@ app.use(express.static('assets'));
 const port = 1337;
 
 app.get('/', (req, res, next) => {
+    const summary = pokemonBank.homepage()[0];
+    console.log(summary);
     res.send(`
         <html>
         <head>
@@ -18,20 +20,13 @@ app.get('/', (req, res, next) => {
         <body>
         <nav>
         <a href='/' class='selected'>Home</a>
-        <a href='/pokemon'>Pokemon</a>
+        <a href='/pokemon'>${summary.title}</a>
         </nav>
-        <h1><ins>Pokemon</ins></h1>
-        <img src="https://images.nintendolife.com/8a8767bcfcc05/you-gotta-start-somewhere.original.jpg" alt="Picture-Of-Pokemon">
+        <h1><ins>${summary.title}</ins></h1>
+        <img src=${summary.image} alt="Picture-Of-Pokemon">
         <div>
         <p id="summary">
-        Many Pokemon exist in the vast world of Pokemon. Many young Pokemon trainers
-        do not get to experience seeing all of the Pokemon in the Pokemon World.
-        Charmander, Squirtle, and Bulbasaur are amongst the three starters in the 
-        Kantou region, and amongst the three, Charmander is the most popular. Fire types 
-        are just the coolest pokemon, and the only time a pokemon is cooler than Charmander
-        is when they are wearing sunglasses. Alright, that's enough text for you folks,
-        if you are done reading this, go to sleep. If I have any spelling or grammar
-        errors in this summary, it's because I am writing it late at night.
+        ${summary.content}
         </p>
         </div>
         </body>

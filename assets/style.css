@@ -14,17 +14,6 @@ img {
     height: auto;
     border-radius: 25%;
 }
-#to_squirtle {
-    color :blue;
-    float : right;
-    margin-right : 3rem;
-}
-
-#to_charmander {
-    color : darkred;
-    float : left;
-    margin-right : 3rem;
-}
 #summary{
     font-family:helvetica;
     align-items: center;
@@ -33,11 +22,6 @@ img {
     color: white;
     line-height : 150%;
     filter:brightness(85%) invert(8%);
-}
-#to_bulbasaur {
-    color : green;
-    float : right;
-    margin-left : 3rem;
 }
 nav {
     display:flex;

@@ -11,7 +11,6 @@ const port = 1337;
 
 app.get('/', (req, res, next) => {
     const summary = pokemonBank.homepage()[0];
-    console.log(summary);
     res.send(`
         <html>
         <head>
